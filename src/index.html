@@ -8,8 +8,15 @@
     <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
     <script>
       window.onload = () => {
-        const mobileMenuIcon = do
-      }
+        const mobileMenuIcon = document.getElementById("mobile-menu-button");
+        mobileMenuIcon.addEventListener("click", () => {
+          if(mobileMenuIcon.classList.contains("open")){
+            mobileMenuIcon.classList.remove("open");
+          } else {
+            mobileMenuIcon.classList.add("open");
+          }
+        });
+      };
     </script>
   </head>
   <body>
@@ -22,10 +29,10 @@
           </div>
         </div> 
         <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer"> 
-        <div id="moblie-menu-button" class="group">  
-          <div class="group-open:rotate-45 h-1 w-8 rounded-full bg-zinc-200"></div>
-          <div class="h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
-          <div class="h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
+        <div id="mobile-menu-button" class="group">  
+          <div class="group-open:rotate-45 transition-all h-1 w-8 rounded-full bg-zinc-200"></div>
+          <div class="transition-all opacity-100 group-open:opacity-0 h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
+          <div class="transition-all group-open:-rotate-45 h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
         </div>
         </div>
         <div class="md:flex hidden flex-1 items-center justify-end">
