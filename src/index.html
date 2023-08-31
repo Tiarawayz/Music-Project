@@ -29,12 +29,13 @@
           </div>
         </div> 
         <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer"> 
-        <div id="mobile-menu-button" class="group">  
-          <div class="group-open:rotate-45 transition-all h-1 w-8 rounded-full bg-zinc-200"></div>
+        <div id="mobile-menu-button" class="group peer">  
+          <div class="top-0 group-open:rotate-45 group-open:top-2 relative transition-all h-1 w-8 rounded-full bg-zinc-200"></div>
           <div class="transition-all opacity-100 group-open:opacity-0 h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
-          <div class="transition-all group-open:-rotate-45 h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
+          <div class="top-0 transition-all group-open:-rotate-45 group-open:-top-2 relative h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
         </div>
-        </div>
+          <div class="hidden absolute top-[62px] bg-gradient-to-r from-rose-500 to to-pink-500 w-full left-0 peer-open:block">moblie menu</div>
+        </div> 
         <div class="md:flex hidden flex-1 items-center justify-end">
           <div class="menu-item">
             <span>Home</span>
